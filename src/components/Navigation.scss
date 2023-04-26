@@ -1,0 +1,15 @@
+@import '../variables.scss';
+
+.navbar {
+    background-color: $color-primary;
+    border-bottom: 0.2rem solid $color-secundary;
+
+    a.dropdown-toggle.nav-link {
+        color: #FFF
+    }
+
+    a.dropdown-toggle.nav-link:hover {
+        color: #212529;
+    }
+
+}
