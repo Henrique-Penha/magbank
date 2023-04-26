@@ -11,9 +11,8 @@ const Icontext = ({
     textClassName = '',
     children, 
 }) => (
-    <Row>
-        <Col>
-            <Row>
+
+            <Row className={`d-flex align-items-center ${className}`}>
                 <Col xs={size} className=''>
                     <FontAwesomeIcon icon={icon} size={`${size}x`} color={color} />
                 </Col>
@@ -21,8 +20,7 @@ const Icontext = ({
                     {children}
                 </Col>
             </Row>
-        </Col>
-    </Row>
+ 
 
 );
 
