@@ -1,0 +1,34 @@
+.faq {
+    background-color: #443a50;
+
+    &-accordion {
+        --bs-accordion-bg: #443a50;
+        --bs-accordion-active-color: #fff;
+        --bs-accordion-active-bg: #3b2e4a;
+        --bs-accordion-border-color: #3b2e4a;
+        --bs-accordion-color: #fff;
+        --bs-accordion-btn-color: #fff;
+        --bs-accordion-btn-bg: #3b2e4a;
+    }
+
+    &-title {
+        font-size: 2.2rem;
+        font-weight: 300;
+        line-height: 1.2;
+        text-align: center;
+
+        @media screen and (min-width: 992px) {
+            font-size: 3.5rem;
+        } 
+    }
+
+    &-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-clickable {
+        cursor: pointer;
+    }
+}

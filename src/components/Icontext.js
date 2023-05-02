@@ -10,9 +10,10 @@ const Icontext = ({
     className = '',
     textClassName = '',
     children, 
+    onClick
 }) => (
 
-            <Row className={`d-flex align-items-center ${className}`}>
+            <Row className={`d-flex align-items-center ${className}`} onClick={onClick}>
                 <Col xs={size} className=''>
                     <FontAwesomeIcon icon={icon} size={`${size}x`} color={color} />
                 </Col>
@@ -21,7 +22,6 @@ const Icontext = ({
                 </Col>
             </Row>
  
-
 );
 
 export default Icontext;
