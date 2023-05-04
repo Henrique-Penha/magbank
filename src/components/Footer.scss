@@ -1,0 +1,13 @@
+@import '../variables.scss';
+
+.footer {
+    border-bottom: 0.2rem solid $color-secundary;
+};
+
+.store {
+    margin: 5rem 0;
+    
+    @media screen and (min-width: 992px) {
+        margin: 0;
+    }
+};
