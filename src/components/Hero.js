@@ -6,7 +6,7 @@ import './Hero.scss';
 
 
 
-const Hero = () => (
+const Hero = ({onClick}) => (
     <Card className='text-center text-light hero'>
         <Row className='my-lg-5'>
             <Col lg className='text-lg-end my-5'>
@@ -16,7 +16,9 @@ const Hero = () => (
             
             <Col lg className='text-lg-start my-5'>
                 <p>Pague suas contas pelo nosso APP</p>
-                <Button variant='outline-light'>Abra sua conta</Button>
+                <Button variant='outline-light' onClick={onClick}>
+                    Abra sua conta
+                </Button>
             </Col>
         </Row>
 
