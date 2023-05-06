@@ -14,7 +14,7 @@ const Hero = ({onClick}) => (
                 <Image className='d-none d-lg-inline-block' src={logoDesktop} />
             </Col>
             
-            <Col lg className='text-lg-start my-5'>
+            <Col lg className='text-lg-start my-lg-5'>
                 <p>Pague suas contas pelo nosso APP</p>
                 <Button variant='outline-light' onClick={onClick}>
                     Abra sua conta

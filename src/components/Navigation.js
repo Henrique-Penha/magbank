@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { Container, Navbar, Nav, ButtonGroup, Button, NavDropdown } from "react-bootstrap";
 import "./Navigation.scss";
 import logo from "../assets/logo.svg";
@@ -8,12 +9,14 @@ const Navigation = ({ handleCreateAcc }) => (
   <Navbar variant="dark" expand="lg">
       <Container>
         <Navbar.Brand href="#">
-        <img
+        <Link to="/">
+         <img
               src= {logo}
               height="30"
               className="d-inline-block align-top"
               alt="Magbank"
-            />
+         />
+        </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -30,13 +33,13 @@ const Navigation = ({ handleCreateAcc }) => (
           <ButtonGroup>
             <Button variant='outline-light'>
             <NavDropdown title="Acessar minha conta" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="#action4">
-                  Pessoa Física
+               <NavDropdown.Item>
+                  <Link to="/login">Pessoa Física</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action5">
-                  Pessoa Jurídica
+                <NavDropdown.Item>
+                <Link to="/login">Pessoa Jurídica</Link>
                 </NavDropdown.Item>
-              </NavDropdown>
+            </NavDropdown>
             </Button>
 
             <Button variant="outline-light" onClick={handleCreateAcc}>
