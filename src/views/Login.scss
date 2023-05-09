@@ -1,0 +1,19 @@
+@import '../variables';
+
+.login {
+    max-width: 100vw;
+    height: calc(100vh - 391px);
+
+    @media screen and (min-width: 992px) {
+        height: calc(100vh - 247px);
+    }
+
+    background-image: linear-gradient(135deg, $color-primary, $color-secundary);
+
+    display: grid;
+    place-items: center;
+
+    &__container {
+        max-width: 22rem;
+    }
+}

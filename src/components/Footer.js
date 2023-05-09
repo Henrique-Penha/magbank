@@ -17,12 +17,12 @@ const Footer = () => {
                     <Image src={log}/>
                 </Col>
 
-                <Col xs={12} lg={4} className='store mb-3'>
+                <Col xs={12} lg={4} className='store mb-5'>
                     <Image src={applestore}/>
                     <Image src={googleplay} className='ms-3 my-3 my-lg-0' />
                 </Col>
 
-                <Col xs={12} lg={2} className='d-flex align-items-center justify-content-center'>
+                <Col xs={12} lg={2} className='d-flex justify-content-center'>
                     <FontAwesomeIcon icon={faFacebookSquare} color='#7c7c7c' size='2x' />
                     <FontAwesomeIcon icon={faTwitter} color='#7c7c7c' size='2x' className='ms-2' />
                     <FontAwesomeIcon icon={faYoutube} color='#7c7c7c' size='2x' className='ms-2' />

@@ -1,0 +1,60 @@
+@import '../variables';
+
+.dashboard {
+
+    @media screen and (min-width: 992px) {
+        height: calc(100vh - 50px);
+    }
+
+
+    position: relative;
+
+    &__user-avatar {
+        position: relative;
+    }
+
+    &__user-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+
+    &__button {
+        color: $color-primary;
+        text-decoration: none;
+        
+        &:hover, &--active {
+            color: #fff;
+            background-color: $color-primary;
+            text-decoration: none;
+        }
+    }
+
+    &__cont {
+        @media screen and (min-width: 992px) {
+            margin-top: 85px;
+        }
+    }
+
+    
+    a.nav-item.nav-link {
+        color: $color-primary;
+    }
+
+    a.nav-item.nav-link.active {
+        color: #626262;
+    }
+    
+    &__tabs {
+        margin-top: 40px;
+
+        @media screen and (min-width: 992px) {
+            margin-top: 180px;
+        }
+    }
+
+}
+
+
+
