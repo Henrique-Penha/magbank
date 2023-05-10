@@ -23,12 +23,33 @@
     &__button {
         color: $color-primary;
         text-decoration: none;
+        margin-bottom: 0.5rem;
+        min-width: 25vw;
+        text-align: start;
         
-        &:hover, &--active {
-            color: #fff;
-            background-color: $color-primary;
+        &:hover, 
+        &:focus,
+        &--active, 
+        &--active:hover {
             text-decoration: none;
         }
+
+        &:hover, 
+        &:focus,
+        &--active, 
+        &--active:hover {
+            color: #fff;        
+        }
+
+        &:hover {
+            background-color: #626262;
+        }
+
+        &--active, 
+        &--active:hover {
+            background-color: $color-primary;
+        }
+    
     }
 
     &__cont {
@@ -50,11 +71,20 @@
         margin-top: 40px;
 
         @media screen and (min-width: 992px) {
-            margin-top: 180px;
+            margin-top: 150px;
         }
+    }
+
+    &__table {
+        margin-bottom: 100px;
     }
 
 }
 
-
+a.dashboard__link,
+a.dashboard__link,:active,
+a.dashboard__link,:focus,
+a.dashboard__link,:hover {
+        text-decoration: none;
+}
 
