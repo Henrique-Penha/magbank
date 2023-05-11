@@ -1,0 +1,24 @@
+.payments {
+
+  @media screen and (min-width: 992px) {
+    &__pgt {
+      margin-top: 130px;
+    }
+  
+    &__tabs {
+      margin-top: 50px;
+    }
+  
+    &__check {
+      margin-left: 50px;
+    }
+  
+    &__button {
+      margin-bottom: 100px;
+    }
+
+  }
+ 
+}
+
+

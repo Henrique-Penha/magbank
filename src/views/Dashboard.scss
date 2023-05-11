@@ -2,11 +2,6 @@
 
 .dashboard {
 
-    @media screen and (min-width: 992px) {
-        height: calc(100vh - 50px);
-    }
-
-
     position: relative;
 
     &__user-avatar {
