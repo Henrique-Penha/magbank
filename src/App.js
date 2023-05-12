@@ -8,20 +8,38 @@ import "./App.scss";
 import Home from './views/Home';
 import Login from './views/Login';
 import Dashboard from './views/Dashboard';
+import PrivateRouter from "./components/PrivateRouter";
 
 import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
+  
+  const [name, setName] = useState();
+  const [account, setAccount] = useState();
+  const isLogged = name && account;
+  const fakeAuth = {
+    login: (name, account, cb) => {
+      setName(name);
+      setAccount(account);
+      setTimeout(cb, 100);
+    },
+    logout: (cb) => {
+      setName();
+      setAccount();
+      setTimeout(cb, 100);
+    }
+  };
+
 
   return (
     <>
-      <Navigation handleCreateAcc={() => setShowModal(true)} />
+      <Navigation handleCreateAcc={() => setShowModal(true)} logged={isLogged} auth={fakeAuth} />
       
       <Routes>
         <Route path="/" element={<Home handleClick={() => setShowModal(true)} />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard/*" element={<Dashboard />} />
+        <Route path="/login" element={<Login auth={fakeAuth} />} />
+        <Route path="/dashboard/*" element={<PrivateRouter Component={Dashboard} logged={isLogged} />} />
       </Routes>
 
 

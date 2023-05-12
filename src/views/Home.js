@@ -9,6 +9,7 @@ import Faq from '../components/Faq';
 
 import posts from '../components/posts';
 
+
 const Home = ({ handleClick }) => (
     <>
       <Hero onClick={handleClick}/>
@@ -21,6 +22,7 @@ const Home = ({ handleClick }) => (
       
       <Institutional onClick={handleClick}/>
       <Faq />
+      
     </>
   );
 

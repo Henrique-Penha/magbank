@@ -16,7 +16,7 @@ const Hero = ({onClick}) => (
             
             <Col lg className='text-lg-start my-lg-5'>
                 <p>Pague suas contas pelo nosso APP</p>
-                <Button variant='outline-light' onClick={onClick}>
+                <Button variant='outline-light' onClick={onClick} className='mb-5'>
                     Abra sua conta
                 </Button>
             </Col>
